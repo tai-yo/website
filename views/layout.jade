@@ -33,6 +33,15 @@ html
 		.loader-container
 			.loader
 
+		nav.site-nav.cf
+			a(href='/').site-logo Taiyo
+			ul.site-links
+				li.item--site-link
+					a.site-link(href='http://blog.taiyo.io') Blog
+
 		block content
+
+		footer.site-footer
+			p.copyright © Taiyo. All Rights Reserved.
 
 		script(src='/js/build.js')
