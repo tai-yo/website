@@ -1,0 +1,33 @@
+.site-projects {
+  @include padding($base-spacing * 2 null);
+
+  .section--project-list {
+
+  }
+}
+
+.item--project {
+  border: 1px solid $light-gray;
+  @include padding($base-spacing);
+  @include margin(null null $base-spacing null);
+
+  &:last-of-type {
+    @include margin(0);
+  }
+
+  .project-name {
+    //text-transform: uppercase;
+
+    .project-link {
+      color: $d-orange;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  .project-description {
+    @include margin(0);
+  }
+}

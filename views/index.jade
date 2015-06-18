@@ -1,0 +1,91 @@
+extends layout
+
+block content
+	nav.site-nav.cf
+		a(href='/').site-logo Taiyo
+		ul.site-links
+			li.item--site-link
+				a.site-link(href='http://blog.taiyo.io') Blog
+	section.site-hero
+		h1.lead We build products for the device agnostic web
+		ul.sub-lead
+			li.sub-lead--item Bangalore
+			li.sub-lead--item Cambridge
+			li.sub-lead--item Montreal
+	section.site-about
+		.site-width
+			h2.section--title About
+			p.section--body
+				| The web and what it can do is expanding daily, and we live on the edge of that growth. The three of us
+				| met as students at <a href="http://www.hackreactor.com">Hack Reactor</a> and now find ourselves in a
+				| position to push the envelope.
+	section.site-team
+		.site-width
+			h2.section--title Team
+			ul.section--team-list
+				li.item--person
+					div.person-image(style='background-image: url(/images/team/omar.jpg)')
+					h4.person-name Omar Alvarez
+					p.person-description
+						| Omar is the guy who holds the team together when times get rough, and will tell you all about Vim
+						| and how amazing it is if you give him a chance. Omar has lived and worked all around the world,
+						| but his ideal home/office is on a beach in Hawaii.
+					ul.person-links
+						li.item--social
+							a(href='https://twitter.com/msgomar').social-link
+								img.iconic.iconic-md.social-icon(data-src='/icons/iconic/social.svg', data-type='twitter')
+						li.item--social
+							a(href='https://uk.linkedin.com/in/omaralvarez06').social-link
+								img.iconic.iconic-md.social-icon(data-src='/icons/iconic/social.svg', data-type='linkedin')
+						li.item--social
+							a(href='https://github.com/omarCA').social-link
+								img.iconic.iconic-md.social-icon(data-src='/icons/iconic/social.svg', data-type='github')
+				li.item--person
+					div.person-image(style='background-image: url(/images/team/raghu.jpg)')
+					h4.person-name Raghuvir Kasturi
+					p.person-description
+						| Raghu loves all things efficient and non-magical, which is he doesn't use Angular or Rails. He
+						| spent a year in Chile, but barely speaks enough Spanish to let someone know he doesn't speak
+						| much Spanish.
+					ul.person-links
+						li.item--social
+							a(href='https://twitter.com/_d4ncer').social-link
+								img.iconic.iconic-md.social-icon(data-src='/icons/iconic/social.svg', data-type='twitter')
+						li.item--social
+							a(href='https://in.linkedin.com/in/d4ncer').social-link
+								img.iconic.iconic-md.social-icon(data-src='/icons/iconic/social.svg', data-type='linkedin')
+						li.item--social
+							a(href='https://github.com/d4ncer').social-link
+								img.iconic.iconic-md.social-icon(data-src='/icons/iconic/social.svg', data-type='github')
+				li.item--person
+					div.person-image(style='background-image: url(/images/team/ryan.jpeg)')
+					h4.person-name Ryan Leung
+					p.person-description
+						| Catching Ryan in a bad mood or off guard is like spotting a unicorn. This guy loves all things
+						| fun, and is the resident expert on bacon and hackintoshes.
+					ul.person-links
+						li.item--social
+							a(href='https://ca.linkedin.com/in/ryleung').social-link
+								img.iconic.iconic-md.social-icon(data-src='/icons/iconic/social.svg', data-type='linkedin')
+						li.item--social
+							a(href='https://github.com/minocys').social-link
+								img.iconic.iconic-md.social-icon(data-src='/icons/iconic/social.svg', data-type='github')
+	section.site-projects
+		.site-width
+			h2.section--title Projects
+			ul.section--project-list
+				li.item--project
+					h4.project-name
+						a(href='https://github.com/wraithjs/wraith').project-link Wraith
+					p.project-description
+						| Wraith is a command line tool that converts a Ghost blog into static assets for easy hosting.
+				li.item--project
+					h4.project-name
+						a(href='http://jotzio.github.io/jotz/').project-link Jotz
+					p.project-description
+						| Jotz is the definitive notebook for coders. The built in code-editor supports 140+ programing
+						| languages, designed for taking notes in rich text and formatted code within the a single
+						| document. No more force-formatting code! You can organize your notes into Notebooks, and
+						| full-text search makes note retrieval quick and painless.
+	footer.site-footer
+		p.copyright © Taiyo. All Rights Reserved.

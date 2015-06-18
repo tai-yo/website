@@ -1,0 +1,16 @@
+.site-width {
+  max-width: 1000px;
+  margin: 0 auto;
+  @include padding(null $base-spacing);
+}
+
+.site-footer {
+  text-align: center;
+  @include padding($small-spacing);
+  background: $red;
+  color: white;
+
+  .copyright {
+    @include margin(0);
+  }
+}

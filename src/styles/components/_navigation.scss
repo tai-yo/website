@@ -1,0 +1,33 @@
+.site-nav {
+  @include padding($base-spacing);
+  @include position(relative);
+
+  .site-logo {
+    @include hide-text();
+    display: block;
+    float: left;
+    width: 101px;
+    background-image: url('/images/logo/logo.svg');
+    background-size: 101px 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+  }
+
+  .site-links {
+    float: right;
+    .site-link {
+      font-family: $alt-font-family;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $dark-gray;
+      border-bottom: 2px solid transparent;
+      @include transition(all 0.1s linear);
+
+      &:hover {
+        color: $medium-gray;
+        border-color: $l-orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-COMPATIBLE', content='IE=edge')
+
+		title= title
+		meta(name='description', content='True')
+		meta(name='HandheldFriendly', content='True')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+		link(rel='stylesheet', href='/style.css')
+
+		script(src='/vendor/iconic.min.js')
+
+		script.
+			(function(d) {
+				var config = {
+					kitId: 'unw4diw',
+					scriptTimeout: 3000,
+					loading: function() {
+						console.info('Fonts are loading');
+					},
+					active: function() {
+
+					}
+
+			},
+			h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+			})(document);
+
+		//script(src="//use.typekit.com/unw4diw.js")
+		//script.
+		//	document.getElementsByTagName('html')[0].classList.add('wf-loading');
+		//	try {
+		//		Typekit.load({
+		//			loading: function() {
+		//
+		//			},
+		//			active: function() {
+		//				document.getElementsByTagName('html')[0].classList.remove('wf-loading');
+		//			},
+		//			inactive: function() {
+		//				console.log('oops, inactive!');
+		//			}
+		//			})
+		//		} catch(e) {}
+	body
+		.loader-container
+			.loader
+
+		block content
+
+		script(src='/js/build.js')

@@ -1,0 +1,39 @@
+.site-hero {
+  @include padding(14em 0);
+  @include linear-gradient($yellow, $l-orange);
+
+  .lead {
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+    max-width: 90%;
+    @include margin(null auto);
+  }
+
+  .sub-lead {
+    list-style: none;
+    text-align: center;
+    font-size: 1.414em;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+
+    .sub-lead--item {
+      display: inline-block;
+
+      &:after {
+        content: '•';
+        @include padding(null 0.75em);
+        color: $yellow;
+      }
+
+      &:last-of-type {
+        &:after {
+          content: none;
+        }
+      }
+    }
+
+    @media (max-width: 900px) {
+      font-size: 1em;
+    }
+  }
+}
